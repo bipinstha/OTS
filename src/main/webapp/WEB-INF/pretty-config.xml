@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.2.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.2.0
+               http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.2.0.xsd">
+
+    <url-mapping id="login">
+        <pattern>/login</pattern>
+        <view-id>/WEB-INF/index.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="signup">
+        <pattern>
+            /signup
+        </pattern>
+        <view-id>/WEB-INF/faces/signup.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="home">
+        <pattern>
+            /secured/home
+        </pattern>
+        <view-id>/WEB-INF/faces/home.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="corporate">
+        <pattern>
+            /secured/corporate/add
+        </pattern>
+        <view-id>/WEB-INF/faces/customer/corporate.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="corporatelist">
+        <pattern>
+            /secured/corporate
+        </pattern>
+        <view-id>/WEB-INF/faces/customer/corporatelist.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="personal">
+        <pattern>
+            /secured/personal/add
+        </pattern>
+        <view-id>/WEB-INF/faces/customer/personal.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="personallist">
+        <pattern>
+            /secured/personal
+        </pattern>
+        <view-id>/WEB-INF/faces/customer/personallist.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="product">
+        <pattern>
+            /secured/product/add
+        </pattern>
+        <view-id>/WEB-INF/faces/product/product.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="productlist">
+        <pattern>
+            /secured/product
+        </pattern>
+        <view-id>/WEB-INF/faces/product/productlist.xhtml</view-id>
+    </url-mapping>
+    <url-mapping id="order">
+        <pattern>
+            /secured/order
+        </pattern>
+        <view-id>/WEB-INF/faces/order/order.xhtml</view-id>
+    </url-mapping>
+    <!-- Preferences Begins -->
+    <url-mapping id="preference">
+        <pattern>
+            /secured/preferences
+        </pattern>
+        <view-id>/WEB-INF/faces/preference/change_password.xhtml</view-id>
+    </url-mapping>
+    <!-- Preferences Ends -->
+    
+</pretty-config>
+

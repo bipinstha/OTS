@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:prettyfaces="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/faces/template/default.xhtml">
+    <ui:define name="title">
+        Create Personal Customer
+    </ui:define>
+    <ui:define name="content">
+        <div class="container" id="content">
+            <h:form prependId="false" id="signup_form">
+                <div class="signup">
+                    <h3> Create Personal Customer </h3>
+                    <div class="message">
+                        <!--<h:messages class="error"/>-->
+                    </div>
+                    <ul>
+                        <li>
+                            <label>Full Name:* </label>
+                            <h:inputText id="firstName" value="#{personalBean.instance.name}" required="true"/>
+                            <h:message for="firstName" class="error"/>
+                        </li>
+                        <li>
+                            <label>Email Id* </label>
+                            <h:inputText id="emailId" value="#{personalBean.instance.email}" required="true" />
+                            <h:message for="emailId" class="error"/>
+                        </li>
+                         <li>
+                            <label>Mobile No* </label>
+                            <h:inputText id="mobile" value="#{personalBean.instance.mobileNo}" required="true" />
+                            <h:message for="mobileNo" class="error"/>
+                        </li>
+                        <div class="clear"></div>
+                        <li>
+                            <label>State* </label>
+                            <h:inputText id="state" value="#{personalBean.instance.state}" required="true"/>
+                            <h:message for="state" class="error"/>
+                        </li>
+                      
+                         <li>
+                            <label>City* </label>
+                            <h:inputText id="city" value="#{personalBean.instance.city}" required="true"/>
+                            <h:message for="city" class="error"/>
+                        </li>
+                         <li>
+                            <label>Zip Code* </label>
+                            <h:inputText id="zipcode" value="#{personalBean.instance.zipcode}" required="true"/>
+                            <h:message for="zipcode" class="error"/>
+                        </li>
+                        <li>
+                            <label>Street* </label>
+                            <h:inputText id="Street" value="#{personalBean.instance.street}" required="true"/>
+                            <h:message for="Street" class="error"/>
+                        </li>
+                       
+                        <div class="clear"></div>
+                        <li>
+                            <h:commandButton value="Save" action="#{personalBean.onSave}"/>
+                            <input type="reset" value="Reset"/>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="login_link">
+                        <a href="#{request.contextPath}/secured/personal">Go to List</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

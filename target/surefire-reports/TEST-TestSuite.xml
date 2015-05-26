@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="19.393" errors="0" skipped="1" tests="5" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/local/jdk1.7.0_25/jre/lib/amd64"/>
+    <property name="java.vm.version" value="23.25-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/bipin/workspace/PMS/pms"/>
+    <property name="java.runtime.version" value="1.7.0_25-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/local/jdk1.7.0_25/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/bipin/netbeans-8.0/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/bipin/netbeans-8.0/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/local/jdk1.7.0_25/jre/lib/amd64:/usr/local/jdk1.7.0_25/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-16-generic"/>
+    <property name="user.home" value="/home/bipin"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="bipin"/>
+    <property name="java.class.path" value="/home/bipin/netbeans-8.0/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/local/jdk1.7.0_25/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/bipin/netbeans-8.0/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_25"/>
+    <property name="java.ext.dirs" value="/usr/local/jdk1.7.0_25/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/local/jdk1.7.0_25/jre/lib/resources.jar:/usr/local/jdk1.7.0_25/jre/lib/rt.jar:/usr/local/jdk1.7.0_25/jre/lib/sunrsasign.jar:/usr/local/jdk1.7.0_25/jre/lib/jsse.jar:/usr/local/jdk1.7.0_25/jre/lib/jce.jar:/usr/local/jdk1.7.0_25/jre/lib/charsets.jar:/usr/local/jdk1.7.0_25/jre/lib/jfr.jar:/usr/local/jdk1.7.0_25/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/bipin/netbeans-8.0/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.515" classname="us.edu.mum.pms.service.test.CustomerServiceTest" name="addCorporateCustomer">
+    <failure message="could not execute statement; SQL [n/a]; constraint [UK_2y47lrmcde8odj5ryq1ju848r]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_2y47lrmcde8odj5ryq1ju848r]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:643)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:105)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:58)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy47.save(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy49.save(Unknown Source)
+	at us.edu.mum.pms.serviceimpl.CorporateCustomerServiceImpl.add(CorporateCustomerServiceImpl.java:24)
+	at us.edu.mum.pms.serviceimpl.CorporateCustomerServiceImpl.add(CorporateCustomerServiceImpl.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy50.add(Unknown Source)
+	at us.edu.mum.pms.service.test.CustomerServiceTest.addCorporateCustomer(CustomerServiceTest.java:36)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:74)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:136)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2975)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3487)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:377)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:214)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:194)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:853)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:827)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:831)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:241)
+	at com.sun.proxy.$Proxy45.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:344)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:329)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	... 71 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;corcus@mum.edu&apos; for key &apos;UK_2y47lrmcde8odj5ryq1ju848r&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:133)
+	... 111 more
+</failure>
+    <system-out>INFO  11 May 2015 21:58:19 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader :315] - Loading XML bean definitions from class path resource [spring-config/core-context.xml]
+INFO  11 May 2015 21:58:20 [org.springframework.context.annotation.ClassPathBeanDefinitionScanner :222] - JSR-250 &apos;javax.annotation.ManagedBean&apos; found and supported for component scanning
+INFO  11 May 2015 21:58:20 [org.springframework.context.annotation.ClassPathBeanDefinitionScanner :230] - JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+INFO  11 May 2015 21:58:21 [org.springframework.context.support.GenericApplicationContext :510] - Refreshing org.springframework.context.support.GenericApplicationContext@da62f80: startup date [Mon May 11 21:58:21 CDT 2015]; root of context hierarchy
+INFO  11 May 2015 21:58:21 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer :172] - Loading properties file from class path resource [jdbc.properties]
+INFO  11 May 2015 21:58:21 [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor :140] - JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+INFO  11 May 2015 21:58:21 [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor :154] - Initializing ExecutorService 
+INFO  11 May 2015 21:58:21 [org.springframework.context.support.GenericApplicationContext :1374] - Bean &apos;executor&apos; of type [class org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  11 May 2015 21:58:21 [org.springframework.context.support.GenericApplicationContext :1374] - Bean &apos;executor&apos; of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  11 May 2015 21:58:22 [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler :154] - Initializing ExecutorService  &apos;scheduler&apos;
+INFO  11 May 2015 21:58:22 [org.springframework.context.support.GenericApplicationContext :1374] - Bean &apos;scheduler&apos; of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  11 May 2015 21:58:22 [org.hibernate.validator.internal.util.Version :27] - HV000001: Hibernate Validator 4.3.0.Final
+INFO  11 May 2015 21:58:23 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :285] - Building JPA container EntityManagerFactory for persistence unit &apos;default&apos;
+INFO  11 May 2015 21:58:24 [org.hibernate.annotations.common.Version :37] - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+INFO  11 May 2015 21:58:24 [org.hibernate.Version :41] - HHH000412: Hibernate Core {4.2.5.Final}
+INFO  11 May 2015 21:58:24 [org.hibernate.cfg.Environment :238] - HHH000206: hibernate.properties not found
+INFO  11 May 2015 21:58:24 [org.hibernate.cfg.Environment :345] - HHH000021: Bytecode provider name : javassist
+INFO  11 May 2015 21:58:24 [org.hibernate.ejb.Ejb3Configuration :529] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  11 May 2015 21:58:25 [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator :188] - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO  11 May 2015 21:58:28 [org.hibernate.dialect.Dialect :130] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  11 May 2015 21:58:28 [org.hibernate.engine.jdbc.internal.LobCreatorBuilder :94] - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+INFO  11 May 2015 21:58:29 [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator :73] - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO  11 May 2015 21:58:29 [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory :48] - HHH000397: Using ASTQueryTranslatorFactory
+INFO  11 May 2015 21:58:30 [org.hibernate.tool.hbm2ddl.SchemaUpdate :182] - HHH000228: Running hbm2ddl schema update
+INFO  11 May 2015 21:58:30 [org.hibernate.tool.hbm2ddl.SchemaUpdate :193] - HHH000102: Fetching database metadata
+INFO  11 May 2015 21:58:30 [org.hibernate.tool.hbm2ddl.SchemaUpdate :205] - HHH000396: Updating schema
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.corporate_customer
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, credit_limit, zip_code, email, credit_rating, street, state, total_points, customer_type, full_name, mobile_no, city]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: []
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [uk_2y47lrmcde8odj5ryq1ju848r, primary]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.order_detail
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, product_id, ordered_quantity, order_id, total_price, shipped_date, order_status]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: [fk_nkb731c2u3fxwuln18o6lyx6u, fk_q6bwjb8y711vixrxinko7wmnw]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [uk_nkb731c2u3fxwuln18o6lyx6u, primary, fk_nkb731c2u3fxwuln18o6lyx6u, fk_q6bwjb8y711vixrxinko7wmnw]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.orders
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, pay_type, order_date, total_price, shipped_date, customer_type, customer_id, discount_percentage]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: []
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [primary]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.personnel_customer
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, zip_code, email, credit_rating, street, state, total_points, customer_type, full_name, mobile_no, city]
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: []
+INFO  11 May 2015 21:58:32 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [uk_8insbje2gsja5iijqfbcyu38d, primary]
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.products
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, available_quantity, price, status, description, product_name, product_type, product_number, registered_date, sold_quantity]
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: []
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [primary]
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :65] - HHH000261: Table found: test.users
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :66] - HHH000037: Columns: [id, user_name, first_name, address, middle_name, last_name, password, mobile]
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :68] - HHH000108: Foreign keys: []
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.TableMetadata :69] - HHH000126: Indexes: [uk_k8d0f2n7n88w1a16yhua64onx, primary]
+INFO  11 May 2015 21:58:33 [org.hibernate.tool.hbm2ddl.SchemaUpdate :242] - HHH000232: Schema update complete
+INFO  11 May 2015 21:58:33 [org.springframework.beans.factory.support.DefaultListableBeanFactory :596] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2242806c: defining beans [helperBean,assembler,userDetailsService,enrolmentBean,orderBean,loginBean,personalBean,productBean,customerBean,PersonnelCustomerService,UserService,ProductService,CorporateCustomerService,BillingService,OrderService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,executor,scheduler,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,orderDAO,productDAO,corporateCustomerDAO,personnelCustomerDAO,userDAO,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,validator,org.springframework.validation.beanvalidation.MethodValidationPostProcessor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+Hibernate: insert into corporate_customer (city, credit_rating, customer_type, email, mobile_no, full_name, state, street, total_points, zip_code, credit_limit) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+WARN  11 May 2015 21:58:34 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :145] - SQL Error: 1062, SQLState: 23000
+ERROR 11 May 2015 21:58:34 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :147] - Duplicate entry &apos;corcus@mum.edu&apos; for key &apos;UK_2y47lrmcde8odj5ryq1ju848r&apos;
+</system-out>
+    <system-err>log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.DailyRollingFileAppender.
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+</system-err>
+  </testcase>
+  <testcase time="0.137" classname="us.edu.mum.pms.service.test.CustomerServiceTest" name="addPersonnelCustomer">
+    <failure message="could not execute statement; SQL [n/a]; constraint [UK_8insbje2gsja5iijqfbcyu38d]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_8insbje2gsja5iijqfbcyu38d]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:643)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:105)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:58)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy51.save(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy52.save(Unknown Source)
+	at us.edu.mum.pms.serviceimpl.PersonnelCustomerServiceImpl.add(PersonnelCustomerServiceImpl.java:27)
+	at us.edu.mum.pms.serviceimpl.PersonnelCustomerServiceImpl.add(PersonnelCustomerServiceImpl.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy53.add(Unknown Source)
+	at us.edu.mum.pms.service.test.CustomerServiceTest.addPersonnelCustomer(CustomerServiceTest.java:44)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:74)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:136)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2975)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3487)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:377)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:214)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:194)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:853)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:827)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:831)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:241)
+	at com.sun.proxy.$Proxy45.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:344)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:329)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	... 71 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;ram@mum.edu&apos; for key &apos;UK_8insbje2gsja5iijqfbcyu38d&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:133)
+	... 111 more
+</failure>
+    <system-out>Hibernate: insert into personnel_customer (city, credit_rating, customer_type, email, mobile_no, full_name, state, street, total_points, zip_code) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+WARN  11 May 2015 21:58:34 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :145] - SQL Error: 1062, SQLState: 23000
+ERROR 11 May 2015 21:58:34 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :147] - Duplicate entry &apos;ram@mum.edu&apos; for key &apos;UK_8insbje2gsja5iijqfbcyu38d&apos;
+</system-out>
+  </testcase>
+  <testcase time="0.868" classname="us.edu.mum.pms.service.test.ProductServiceTest" name="addProductTest">
+    <failure message="expected [3] but found [9]" type="java.lang.AssertionError">java.lang.AssertionError: expected [3] but found [9]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at us.edu.mum.pms.service.test.ProductServiceTest.addProductTest(ProductServiceTest.java:39)
+</failure>
+    <system-out>Hibernate: insert into products (available_quantity, description, price, product_name, product_number, product_type, registered_date, sold_quantity, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into products (available_quantity, description, price, product_name, product_number, product_type, registered_date, sold_quantity, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into products (available_quantity, description, price, product_name, product_number, product_type, registered_date, sold_quantity, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into products (available_quantity, description, price, product_name, product_number, product_type, registered_date, sold_quantity, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into products (available_quantity, description, price, product_name, product_number, product_type, registered_date, sold_quantity, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select product0_.id as id1_4_, product0_.available_quantity as availabl2_4_, product0_.description as descript3_4_, product0_.price as price4_4_, product0_.product_name as product_5_4_, product0_.product_number as product_6_4_, product0_.product_type as product_7_4_, product0_.registered_date as register8_4_, product0_.sold_quantity as sold_qua9_4_, product0_.status as status10_4_ from products product0_ where product0_.product_type=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+Hibernate: select orderdetai0_.id as id1_1_2_, orderdetai0_.order_id as order_id6_1_2_, orderdetai0_.order_status as order_st2_1_2_, orderdetai0_.ordered_quantity as ordered_3_1_2_, orderdetai0_.product_id as product_7_1_2_, orderdetai0_.shipped_date as shipped_4_1_2_, orderdetai0_.total_price as total_pr5_1_2_, order1_.id as id1_2_0_, order1_.customer_id as customer2_2_0_, order1_.customer_type as customer3_2_0_, order1_.discount_percentage as discount4_2_0_, order1_.order_date as order_da5_2_0_, order1_.shipped_date as shipped_6_2_0_, order1_.pay_type as pay_type7_2_0_, order1_.total_price as total_pr8_2_0_, product2_.id as id1_4_1_, product2_.available_quantity as availabl2_4_1_, product2_.description as descript3_4_1_, product2_.price as price4_4_1_, product2_.product_name as product_5_4_1_, product2_.product_number as product_6_4_1_, product2_.product_type as product_7_4_1_, product2_.registered_date as register8_4_1_, product2_.sold_quantity as sold_qua9_4_1_, product2_.status as status10_4_1_ from order_detail orderdetai0_ inner join orders order1_ on orderdetai0_.order_id=order1_.id inner join products product2_ on orderdetai0_.product_id=product2_.id where orderdetai0_.product_id=?
+</system-out>
+  </testcase>
+  <testcase time="0.23" classname="us.edu.mum.pms.service.test.UserServiceTest" name="addUserTest">
+    <failure message="could not execute statement; SQL [n/a]; constraint [UK_k8d0f2n7n88w1a16yhua64onx]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_k8d0f2n7n88w1a16yhua64onx]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:643)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:105)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:58)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy57.save(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy58.save(Unknown Source)
+	at us.edu.mum.pms.serviceimpl.UserServiceImpl.add(UserServiceImpl.java:24)
+	at us.edu.mum.pms.serviceimpl.UserServiceImpl.add(UserServiceImpl.java:15)
+	at us.edu.mum.pms.service.test.UserServiceTest.addUserTest(UserServiceTest.java:29)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:74)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:136)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2975)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3487)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:377)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:214)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:194)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:853)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:827)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:831)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:241)
+	at com.sun.proxy.$Proxy45.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:344)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:329)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	... 58 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;aakee.stha@gmail.com&apos; for key &apos;UK_k8d0f2n7n88w1a16yhua64onx&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:133)
+	... 98 more
+</failure>
+    <system-out>Hibernate: insert into users (address, first_name, last_name, middle_name, mobile, password, user_name) values (?, ?, ?, ?, ?, ?, ?)
+WARN  11 May 2015 21:58:36 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :145] - SQL Error: 1062, SQLState: 23000
+ERROR 11 May 2015 21:58:36 [org.hibernate.engine.jdbc.spi.SqlExceptionHelper :147] - Duplicate entry &apos;aakee.stha@gmail.com&apos; for key &apos;UK_k8d0f2n7n88w1a16yhua64onx&apos;
+</system-out>
+  </testcase>
+  <testcase time="0.259" classname="us.edu.mum.pms.service.test.OrderServiceTest" name="orderProduct">
+    <skipped/>
+  </testcase>
+</testsuite>

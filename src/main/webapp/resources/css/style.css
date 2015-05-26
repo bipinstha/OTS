@@ -1,0 +1,199 @@
+/* 
+    Created on : Jul 4, 2014, 7:22:30 AM
+    Author     : bipin
+*/
+ 
+#content{ margin-bottom: 50px; margin-top: 50px;}
+.searchContainer{    margin: 0 auto;    text-align: center;}
+.searchBox{
+    margin: 3px 2px; padding: 6px 8px; width: 50%; min-width: 300px;
+    font-size: 14px;
+}
+.error{font-size: 11px; color: #d2322d; text-align: center;}
+.err{color: #d2322d;}
+.info{font-size: 11px; color: #2d6987; text-align: center;}
+table.list{
+    margin: 20px 0;
+    width: 100%;
+}
+table.list tr{
+    border-bottom: #cccccc solid 2px;
+}
+table.list tr:first-child{
+    border-bottom: #cccccc solid 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-inverse {
+    background-color: #27354B;
+    border-color: #080808;
+}
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+    font-weight: bold;
+}
+.col{ margin-top: 20px;}
+.clear{clear: both;}
+input[type='submit']:hover, input[type='reset']:hover, button:hover{
+    background: #27354F; color: #CCC;
+}
+/*Login page css*/
+.login{
+    margin: 10% auto 0;
+    border: #27354B 1px solid;
+    max-width: 350px;
+}
+.login h3, .signup h3 { font-size: 22px; background: #27354B; color: #FFF; padding: 0.5em 2em; margin:0 0 0.5em !important;}
+.login .message, .signup .message{ padding: 0.5em 2em 0.5em;}
+.login ul, .signup ul{padding: 0 2em;}
+.login ul li, .signup ul li{ list-style: none; margin: 5px 0;}
+.login li span, .signup li label, .signup li span { display: block; font-weight: bold;}
+.login li input[type='text'],.login li input[type='password']
+{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; width: 100%; background: #FFF;
+}
+.signup li{float: left; margin-left: 15px !important;}
+.signup li input[type='text'],.signup li input[type='password'], .signup li select{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; background: #FFF; width: 200px;
+
+}
+.login .signup_link{ padding: 0.5em 2em; float: right;}
+input[type='submit'], input[type='reset'], button{
+    background: #27354B; border: #000;
+    padding: 5px 8px; margin: 0 1em 0 0;
+    color: #FFF;
+}
+/*** signup *****/
+.signup{
+    margin: 2% auto 0;
+    border: #27354B 1px solid;
+    max-width: 750px;
+}
+.signup .login_link{
+    padding: 0.5em 2em; float: right;
+}
+.profile{
+    float: left;
+}
+.profile_image{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+.profile_image img{
+    margin-bottom: 5px;
+}
+
+
+/****res form****/
+.resForm h3 { font-size: 22px; background: #27354B; color: #FFF; padding: 0.5em 2em; margin:0 0 0.5em !important;}
+.resForm .message{ padding: 0.5em 2em 0.5em;}
+.resForm ul{padding: 0 2em;}
+.resForm ul li{ list-style: none; margin: 5px 0;}
+.resForm li span, .resForm li label { display: block; font-weight: bold;}
+.resForm li input[type='text'],.resForm li input[type='password']{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; width: 100%; background: #FFF;
+}
+.resForm li{float: left; margin-left: 15px !important;}
+.resForm li input[type='text'],.resForm li input[type='password'], .resForm li select{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; background: #FFF; width: 200px;
+
+}
+
+
+/****preference form****/
+.preference{
+    margin: 3% auto 0;
+    border: #27354B 1px solid;
+    max-width: 500px;
+}
+.preference h3 { font-size: 22px; background: #27354B; color: #FFF; padding: 0.5em 2em; margin:0 0 0.5em !important;}
+.preference .message{ padding: 0.5em 2em 0.5em;}
+.preference ul{padding: 0 2em;}
+.preference ul li{ list-style: none; margin: 5px 0;}
+.preference li span, .preference li label {// display: block; 
+                                           font-weight: bold; min-width: 150px;}
+.preference li input[type='text'],.preference li input[type='password']{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; width: 100%; background: #FFF;
+}
+.preference li{float: left; margin-left: 15px !important;}
+.preference li input[type='text'],.preference li input[type='password'], .resForm li select{
+    height: 30px; border: #999 1px solid; padding: 3px 5px;
+    color: #999; background: #FFF; width: 200px;
+
+}
+
+
+.imageUploadDialogue ul{ list-style: none;}
+.imageUploadDialogue li span{display: block;}
+.imageUploadDialogue li label{font-weight: bold;}
+.imageUploadDialogue li {margin: 7px;}
+.imageUploadDialogue li input[type='file']{width: 200px; border: 1px solid #999; padding: 4px 5px;}
+/* popup_box DIV-Styles*/
+#large_popup_box { 
+    display:none; /* Hide the DIV */
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6 */  
+    height:auto;  
+    width:650px;  
+    background:#FFFFFF;  
+    left: 25%;
+    top: 180px;
+    z-index:9999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+    margin-left: 15px;  
+    border:2px solid #003300;  	
+    padding:15px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #003300;
+    -webkit-box-shadow: 0 0 5px #003300;
+    box-shadow: 0 0 5px #003300;
+}
+#loading_box img{margin: 180px 0 0 40%;}
+#dialog{
+    z-index: 999999;
+    height: 100%; width: 100%;
+    position:fixed;  
+    display: none; 
+}
+#dialog .dialog_popup { 
+    /*display:none;  Hide the DIV */
+    position:fixed;  
+    _position:absolute;  /**hack for internet explorer 6   **/
+    height:auto;  
+    width:350px;  
+    background:#FFFFFF;  
+    left: 40%;
+    top: 180px;
+    z-index:9999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+    margin-left: 15px;  
+    border:2px solid #27354B;  	
+    /*padding:15px;*/  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #27354B;
+    -webkit-box-shadow: 0 0 5px #27354B;
+    box-shadow: 0 0 5px #27354B;
+}
+#dialog .dialog_popup h2{
+    background: #27354B; font-size: 18px; color: #FFF;
+    margin-top: 0;
+    padding: 5px 10px;
+}
+#popupBoxClose {
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    color:#6fa5e2;  
+    font-weight:500;  	
+}
+
+.uploadImage{
+    font-size: 12px; text-decoration: none; text-align: center; margin: 5px 0;
+}
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:prettyfaces="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/faces/template/default.xhtml">
+    <ui:define name="title">
+        Create New Product
+    </ui:define>
+    <ui:define name="content">
+        <div class="btn" style="float:right">
+            <a href="#{request.contextPath}/secured/product">Go to List</a>
+        </div>
+        <div class="container" id="content">
+            <h:form prependId="false" id="signup_form">
+                <div class="signup">
+                    <h3> Create New Product </h3>
+                    <div class="message">
+                        <!--<h:messages class="error"/>-->
+                    </div>
+                    <ul>
+                        <li>
+                            <label>Product Name:* </label>
+                            <h:inputText id="productName" value="#{productBean.instance.productName}" required="true"/>
+                            <h:message for="productName" class="error"/>
+                        </li>
+                        <li>
+                            <label>Product No:* </label>
+                            <h:inputText id="productNo" value="#{productBean.instance.productNo}" required="true"/>
+                            <h:message for="productNo" class="error"/>
+                        </li>
+
+                        <li>
+                            <label>Description* </label>
+                            <h:inputText id="description" value="#{productBean.instance.description}" required="true"/>
+                            <h:message for="description" class="error"/>
+                        </li>
+
+                        <li>
+                            <label>Price* </label>
+                            <h:inputText id="price" value="#{productBean.instance.price}" required="true"/>
+                            <h:message for="price" class="error"/>
+                        </li>
+
+                        <li>
+                            <label>Product Type* </label>
+                            <h:selectOneMenu id="productType" value="#{productBean.instance.productType}" required="true">
+                                <f:selectItems value="#{helperBean.productTypes}" var="type" itemValue="#{type}" itemLabel="#{type}"/>
+                            </h:selectOneMenu>
+                            <h:message for="productType" class="error"/>
+                        </li>
+
+                        <li>
+                            <label>Product Quantity* </label>
+                            <h:inputText id="quantity" value="#{productBean.instance.availableQuantity}" required="true"/>
+                            <h:message for="quantity" class="error"/>
+                        </li>
+
+                        <div class="clear"></div>
+                        <li>
+                            <h:commandButton value="Save" action="#{productBean.onSave}"/>
+                            <input type="reset" value="Reset"/>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

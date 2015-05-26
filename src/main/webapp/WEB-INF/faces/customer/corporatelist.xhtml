@@ -1,0 +1,46 @@
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:prettyfaces="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/faces/template/default.xhtml">
+    <ui:define name="title">
+        Corporate Customer List
+    </ui:define>
+    <ui:define name="content">
+        <div class="btn" style="float:right">
+            <a href="#{request.contextPath}/secured/corporate/add">New Customer</a>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Credit Limit</th>
+                    <th>Credit Rating</th>
+                    <th>Total Points</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <ui:repeat value="#{customerBean.customerList}" var="list">
+                <tr>
+                    <td>#{list.name}</td>
+                    <td>#{list.street}, #{list.city}, #{list.state} </td>
+                    <td>#{list.email}</td>
+                    <td>#{list.mobileNo}</td>
+                    <td>#{list.creditLimit}</td>
+                    <td>#{list.creditRating}</td>
+                    <td>#{list.totalPoints}</td>
+                    <th>
+                        <h:commandButton value="View" styleClass="btn-info"/>
+                        <h:commandButton value="Edit" styleClass="btn-primary"/>
+                        <h:commandButton value="Delete" styleClass="btn-warning"/>
+                    </th>
+                </tr>
+            </ui:repeat>
+        </table>
+    </ui:define>
+
+</ui:composition>

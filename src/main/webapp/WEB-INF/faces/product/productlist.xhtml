@@ -1,0 +1,41 @@
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:prettyfaces="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/faces/template/default.xhtml">
+    <ui:define name="title">
+        Product List
+    </ui:define>
+    <ui:define name="content">
+        <div class="btn" style="float:right">
+            <a href="#{request.contextPath}/secured/product/add">New Product</a>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <ui:repeat value="#{productBean.productList}" var="list">
+                <tr>
+                    <td>#{list.productName}</td>
+                    <td>#{list.productType.name}</td>
+                    <td>#{list.description} </td>
+                    <td>#{list.price}</td>  
+                    <td>#{list.availableQuantity}</td> 
+                    <td>
+                        <h:commandButton value="Edit" styleClass="btn-primary"/>
+                        <h:commandButton value="Delete" styleClass="btn-warning"/>
+                    </td> 
+                </tr>
+            </ui:repeat>
+        </table>
+    </ui:define>
+
+</ui:composition>

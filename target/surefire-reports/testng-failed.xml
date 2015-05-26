@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="us.edu.mum.pms.service.test.ProductServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addProductTest"/>
+        </methods>
+      </class> <!-- us.edu.mum.pms.service.test.ProductServiceTest -->
+      <class name="us.edu.mum.pms.service.test.OrderServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="orderProduct"/>
+        </methods>
+      </class> <!-- us.edu.mum.pms.service.test.OrderServiceTest -->
+      <class name="us.edu.mum.pms.service.test.CustomerServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="addPersonnelCustomer"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="addCorporateCustomer"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- us.edu.mum.pms.service.test.CustomerServiceTest -->
+      <class name="us.edu.mum.pms.service.test.UserServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="addUserTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- us.edu.mum.pms.service.test.UserServiceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

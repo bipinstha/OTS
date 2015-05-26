@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:prettyfaces="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/faces/template/default.xhtml"
+                xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <ui:define name="title">
+        New Order
+    </ui:define>
+    <ui:define name="content">
+        <script type="text/javascript">
+            $(function () {
+                hidenshow();
+            });
+            function hidenshow()
+            {
+                if ($('#customer').val() == 'CORPORATE')
+                {
+                    $('#percustomer').hide();
+                    $('#corcustomer').show();
+                }
+                else
+                {
+                    $('#percustomer').show();
+                    $('#corcustomer').hide();
+                }
+            }
+            ;</script>
+        <div class="container" id="content">
+            <h:form prependId="false" id="signup_form">
+                <div class="signup">
+                    <h3> New Order </h3>
+                    <div class="message">
+                        <!--<h:messages class="error"/>-->
+                    </div>
+                    <ul>
+                        <li>
+                            <label>Customer Type</label>
+                            <h:selectOneMenu id="customer" value="#{orderBean.customerType}" required="true" onchange="hidenshow()">
+                                <f:selectItem noSelectionOption="true" itemLabel="Select customer type"/>
+                                <f:selectItem   itemValue="CORPORATE" itemLabel="Corporate" />
+                                <f:selectItem   itemValue="PERSONNEL" itemLabel="Personal" />
+                                <f:ajax execute="@this"/>
+                            </h:selectOneMenu>
+                        </li>
+                        <li id='corcustomer'>
+                            <label> Corporate Customer:* </label>
+                            <h:selectOneMenu id="corporateCustomers" value="#{orderBean.customerEmail}">
+                                <f:selectItem noSelectionOption="true" itemLabel="Select customer"/>
+                                <f:selectItems value="#{helperBean.corporateCustomers}" var="type"
+                                               itemValue="#{type.email}" itemLabel="#{type.name}" />
+                                <f:ajax execute="@this"/>
+                            </h:selectOneMenu>
+                            <h:message for="corporateCustomers" class="error"/>
+                        </li>
+                        <li id='percustomer'>
+                            <label>Personal Customer* </label>
+                            <h:selectOneMenu id="personnelCustomer" value="#{orderBean.customerEmail}">
+                                <f:selectItem noSelectionOption="true" itemLabel="Select customer"/>
+                                <f:selectItems value="#{helperBean.personnelCustomers}" var="type"
+                                               itemValue="#{type.email}" itemLabel="#{type.name}"/>
+                                <f:ajax execute="@this"/>
+                            </h:selectOneMenu>
+                            <h:message for="personnelCustomer" class="error"/>
+                        </li>
+                        <div class="clear"></div>
+                        <h:panelGroup id="dataOrder" rendered="#{not empty orderBean.orderDetails}">
+                            <table class="table" style="width: 100%">
+                                <tr>
+                                    <th>Product Type</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th> 
+                                    <th>Quantity</th> 
+                                </tr>
+                                <ui:repeat value="#{orderBean.orderDetails}" var="list">
+                                    <tr>
+                                        <td>#{list.product.productType}</td>
+                                        <td>#{list.product.productName}</td>
+                                        <td>#{list.product.price}</td> 
+                                        <td>#{list.orderedQuantity}</td> 
+                                    </tr>
+                                </ui:repeat>
+                            </table> 
+                        </h:panelGroup>
+                        <li>
+                            <label>Product Type* </label>
+                            <h:selectOneMenu id="productType" value="#{orderBean.productType}" required="true">
+                                <f:selectItems value="#{helperBean.productTypes}" var="type" 
+                                               itemValue="#{type}" itemLabel="#{type}" />
+                                <f:ajax render="products"/>
+                            </h:selectOneMenu>
+
+                            <h:message for="productType" class="error"/>
+                        </li>
+                        <li>
+                            <label>Products:*</label>
+                            <h:selectOneMenu id="products" value="#{orderBean.productId}">
+                                <f:selectItem noSelectionOption="true" itemLabel="Select"/>
+                                <f:selectItems value="#{orderBean.products}" var="type"
+                                               itemValue="#{type.id}" itemLabel="#{type.productName}"/>
+                                <f:ajax render="price quantity" execute="@this" listener="#{orderBean.findProduct}"/>
+                            </h:selectOneMenu>
+                        </li>
+                        <li>
+                            <label>Quantity</label>
+                            <h:selectOneMenu id="quantity" value="#{orderBean.quantity}">
+                                <f:selectItems value="#{orderBean.quantities}" var="item" itemValue="#{item}" itemLabel="#{item}"/>
+                                <f:ajax render="price"/>
+                            </h:selectOneMenu>
+                        </li>
+                        <div class="clear"></div>
+                        <li>
+                            <label>Price</label>
+                            <h:panelGroup id="price">
+                                <h:inputText disabled="true" value="#{orderBean.product.price * orderBean.quantity}" style="width: 80px"/>
+                            </h:panelGroup>
+                        </li>
+                        <li>
+                            <label><h:outputText value="&#160;" /></label>
+                            <h:commandButton type="button" value="Add" styleClass="btn-primary">
+                                <f:ajax execute="price quantity productType" render="@form" listener="#{orderBean.onAdd}"/>
+                            </h:commandButton>
+                        </li>
+                        <div class="clear"></div>
+                        <li>
+                            <h:commandButton rendered="#{not empty orderBean.orderDetails}" value="Order" action="#{orderBean.onSave}"/>
+                            <h:commandButton rendered="#{not empty orderBean.orderDetails}" value="Cancel Order" action="#{orderBean.onCancel}"/>
+                        </li>
+                    </ul>
+
+                    <div class="clear"></div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>
