@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package us.edu.mum.ots.utility;
 
 import java.util.ArrayList;
@@ -14,9 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import us.edu.mum.ots.controller.PersonalController;
 import us.edu.mum.ots.domain.CorporateCustomer;
-import us.edu.mum.ots.domain.Customer;
 import us.edu.mum.ots.domain.PersonnelCustomer;
-import us.edu.mum.ots.domain.Product;
 import us.edu.mum.ots.domain.ProductType;
 import us.edu.mum.ots.service.CorporateCustomerService;
 import us.edu.mum.ots.service.PersonnelCustomerService;
